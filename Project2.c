@@ -24,11 +24,7 @@ int main()
     int size;
     char ch;
     file.top = 0;
-    // f1 = fopen("hemlo.txt", "w");
-    // do{
-    //                         ch = fgetc(f1);
-    //                         printf("%c", ch);
-    //                     } while(ch != EOF);
+   
     while(1)
     {
     printf("What do you want to perform: \n");
@@ -99,12 +95,7 @@ int main()
                 else
                     repeat = 1;
             }
-                // else
-                // {
-                //     printf("This account has not been linked!\n\n");
-                //     repeat = 1;
-                // }
-            
+               
 
             if(repeat == 1)
             {
@@ -159,24 +150,19 @@ int main()
             {   
                 printf("You have entered incorrect Passcode!\n");
                 continue;
-                // printf("Verifying your Account link status.....\n\n");
-                // printf("Your Account is not linked to this project!\n");
             }
-            //file.top++;
+            
             break;
         }
 
         case 3:
-            //printf("%d", file.top);
+            
             printf("Following are the changes made recently: \n");
             for (int i = file.top-1; i>= 0; i--)
             {
                 printf("%-10s added --> %s \n",file.changesMaker[i],file.changesMade[i]);
             }
-            break;
-
-        
-        
+            break;             
     }
     
     }
